@@ -14,7 +14,7 @@ function BackupConfigFiles {
     # copy .npmrc to the root of the repository
     Copy-Item $env:USERPROFILE\.npmrc -Destination .\.npmrc -Force
     # copy .vscode/extensions/extensions.json to the root of the repository
-    Copy-Item $env:USERPROFILE\.vscode\extensions\extensions.json -Destination .\vscode\extensions\ -Recurse -Force
+    Copy-Item $env:USERPROFILE\.vscode\extensions\extensions.json -Destination .\vscode\extensions\extensions.json -Recurse -Force
     # copy vscode settings from appdata to the root of the repository
     Copy-Item $env:USERPROFILE\AppData\Roaming\Code\User\settings.json -Destination .\vscode\settings.json -Force
     # copy vscode snippets from appdata to the root of the repository
@@ -44,7 +44,7 @@ function RestoreConfigFiles {
     # copy .npmrc to the root of the user profile
     Copy-Item .\.npmrc -Destination $env:USERPROFILE\.npmrc -Force
     # copy .vscode/extensions/extensions.json to the root of the user profile
-    Copy-Item .\vscode\extensions\extensions.json -Destination $env:USERPROFILE\.vscode\extensions\ -Recurse -Force
+    Copy-Item .\vscode\extensions\extensions.json -Destination $env:USERPROFILE\.vscode\extensions\extensions.json -Force
     # copy vscode settings from the root of the repository to appdata
     Copy-Item .\vscode\settings.json -Destination $env:USERPROFILE\AppData\Roaming\Code\User\settings.json -Force
     # copy vscode snippets from the root of the repository to appdata
@@ -71,16 +71,66 @@ function RestoreConfigFilesAfterPull {
     RestoreConfigFiles
 }
 
-# install vs code plugins from extensions.json in commandline
+# install vs code plugins from extensions.json in commandline if not installed  and after confirming with the user
 function InstallVsCodeExtensions {
     param(
     )
-    $extensions = Get-Content vscode\extensions\extensions.json | ConvertFrom-Json
+    $extensions = Get-Content .\vscode\extensions\extensions.json | ConvertFrom-Json
     $extensions | ForEach-Object {
-        code --install-extension $_.name
+        $extensionName = $_.name
+        $extensionPublisher = $_.publisher
+        if(CheckIfExtensionInstalled -extensionName $extensionName -extensionPublisher $extensionPublisher) {
+            Write-Host "Extension $extensionName by $extensionPublisher is already installed"
+            continue
+        }
+
+        $installExtension = Read-Host "Install extension $extensionName by $extensionPublisher? (y/n)"
+        if ($installExtension -eq "y") {
+            # code --install-extension $extensionPublisher.$extensionName
+        }
+    }
+}
+# check if extension is installed in vs code from commandline
+function CheckIfExtensionInstalled {
+    param(
+        [string]$extensionName,
+        [string]$extensionPublisher
+    )
+    $extension = code --list-extensions | Where-Object {$_ -eq "$extensionPublisher.$extensionName"}
+    if ($extension -eq "$extensionPublisher.$extensionName") {
+        Write-Host "Extension $extensionName by $extensionPublisher is installed"
+    } else {
+        Write-Host "Extension $extensionName by $extensionPublisher is not installed"
     }
 }
 
+# retrieve list of installed moduls in powershell
+function GetInstalledModules {
+    param(
+    )
+    Get-Module -ListAvailable | Select-Object Name, Version, Path
+}
+# retrieve list of installed modules in powershell and save to a json file
+function GetInstalledModulesToJson {
+    param(
+    )
+    GetInstalledModules | ConvertTo-Json | Out-File .\powershell\installedModules.json
+}
+# for all modules in installedModules.json, install them after confirming with the user
+function InstallModulesFromJson {
+    param(
+    )
+    $modules = Get-Content .\powershell\installedModules.json | ConvertFrom-Json
+    $modules | ForEach-Object {
+        $moduleName = $_.Name
+        $moduleVersion = $_.Version
+        $modulePath = $_.Path
+        $installModule = Read-Host "Install module $moduleName version $moduleVersion from $modulePath? (y/n)"
+        if ($installModule -eq "y") {
+            Install-Module -Name $moduleName -RequiredVersion $moduleVersion -Scope CurrentUser
+        }
+    }
+}
 
 
 
