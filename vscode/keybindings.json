@@ -31,6 +31,16 @@
         "key": "r",
         "command": "renameFile",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+v",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+m ctrl+x",
+        "command": "-editor.action.insertSnippet",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
     }
     
 ]

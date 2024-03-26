@@ -77,30 +77,31 @@ function InstallVsCodeExtensions {
     )
     $extensions = Get-Content .\vscode\extensions\extensions.json | ConvertFrom-Json
     $extensions | ForEach-Object {
-        $extensionName = $_.name
-        $extensionPublisher = $_.publisher
-        if(CheckIfExtensionInstalled -extensionName $extensionName -extensionPublisher $extensionPublisher) {
+        $extensionName = $_.identifier.id
+        $extensionPublisher = $_.metadata.publisherDisplayName
+        if(CheckIfExtensionInstalled -extensionName $extensionName ) {
             Write-Host "Extension $extensionName by $extensionPublisher is already installed"
             continue
         }
 
         $installExtension = Read-Host "Install extension $extensionName by $extensionPublisher? (y/n)"
         if ($installExtension -eq "y") {
-            # code --install-extension $extensionPublisher.$extensionName
+            # code --install-extension $extensionName
         }
     }
 }
 # check if extension is installed in vs code from commandline
 function CheckIfExtensionInstalled {
     param(
-        [string]$extensionName,
-        [string]$extensionPublisher
+        [string]$extensionName
     )
-    $extension = code --list-extensions | Where-Object {$_ -eq "$extensionPublisher.$extensionName"}
-    if ($extension -eq "$extensionPublisher.$extensionName") {
-        Write-Host "Extension $extensionName by $extensionPublisher is installed"
+    $extension = code --list-extensions | Where-Object {$_ -eq "$extensionName"}
+    if ($extension -eq "$extensionName") {
+        Write-Host "Extension $extensionName  is installed"
+        return $true
     } else {
-        Write-Host "Extension $extensionName by $extensionPublisher is not installed"
+        Write-Host "Extension $extensionName  is not installed"
+        return $false
     }
 }
 
