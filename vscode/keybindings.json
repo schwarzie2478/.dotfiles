@@ -1,0 +1,36 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+alt+oem_3",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "shift+alt+oem_3",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "shift+alt+oem_3",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+v",
+        "command": "toggleVim"
+    },
+    {
+        "key": "ctrl+u ctrl+p",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "fileExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    }
+    
+]

@@ -1,0 +1,26 @@
+[user]
+	name = Stijn Peeters
+	email = schwarzie2478@hotmail.com
+[core]
+	autocrlf = false
+	excludesfile = C:\\Users\\stijn\\.gitignore
+	safecrlf = false
+	editor = \"C:\\Users\\Stijn\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[credential]
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[push]
+	default = matching
+[credential]
+	helper = wincred
+[alias]
+	co = checkout
+	com = checkout master
+	cof = "!git checkout -B feature/$1 && echo Created feature branch "
+	cob = "!git checkout -B bugfix/$1 && echo Created bugfix branch "c
+	pushh = push origin head
+	list = branch -l
+	undo = reset --soft HEAD~1
+	diff-words = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'

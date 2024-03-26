@@ -1,0 +1,130 @@
+{
+	"workbench.colorTheme": "Visual Studio Dark",
+    "editor.renderControlCharacters": false,
+    "git.autofetch": true,
+    "team.showWelcomeMessage": false,
+    "mssql.connections": [
+        {
+            "server": "localhost",
+            "database": "master",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true
+        }
+    ],
+    "git.enableSmartCommit": true,
+    "emmet.extensionsPath": [
+        ""
+    ],
+    "instantmarkdown.autoOpenBrowser": false,
+    "tabnine.experimentalAutoImports": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "jupyter.alwaysTrustNotebooks": true,
+    "sync.removeExtensions": false,
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.quietSync": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.fontFamily": "MesloLGS NF Regular",
+    "editor.fontFamily": "Caskaydia Cove NF",
+    "editor.fontSize": 16,
+    "terminal.integrated.profiles.windows": {
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+            "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": []
+        }
+    },
+	"git.confirmSync": false,
+	"editor.inlineSuggest.enabled": true,
+	"ahk++.file.helpPath": "C:/Program Files/AutoHotkey/v2/AutoHotkey.chm",
+	"ahk++.file.executePath": "C:/Program Files/AutoHotkey/v2/AutoHotkey64.exe",
+	"ahk++.file.compilePath": "C:/Program Files/AutoHotkey/v2/Ahk2Exe.exe",
+    "autoit.consoleParams": "-profileDirID.16770965323784367.198300004005",
+    "bicep.enableSurveys": false,
+    "window.titleBarStyle": "custom",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "liveshare.accessibility.voiceEnabled": true,
+    "vim.neovimPath": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+    "vim.enableNeovim": true,
+    "editor.minimap.enabled": false,
+    "vim.gdefault": true,
+    "vim.insertModeKeyBindings": [
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<ESC>"]
+    }
+    ],
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.leader": "<Space>",
+    "vim.easymotionKeys": "hklyuiopnm,azertzxcvbqsdgjf;",
+    "vim.easymotionMarkerFontWeight": "normal",
+    "vim.easymotionMarkerForegroundColorOneChar": "#ff2222",
+    "vim.easymotionMarkerBackgroundColor": "#0FF0",
+    "vim.smartRelativeLine": true,
+    "vim.handleKeys":{
+        "<C-p>": false,
+        "<C-k>": false
+    },
+    "editor.lineNumbers": "on",
+    "editor.cursorSurroundingLines": 4,
+    "vim.statusBarColors.surroundinputmode": "",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingComments": "never",
+    "[css]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.combo.threshold": 50,
+    "vim.whichwrap": "b,s,h,l",
+    "hediet.vscode-drawio.resizeImages": null,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.axaml": "${capture}.axaml.cs",
+        "*.xaml.cs": "${capture}.xaml.cs",
+        "*.razor": "${capture}.razor.cs",
+        "*.aspx": "${capture}.aspx.cs"
+    },
+    "powershell.scriptAnalysis.settingsPath": "C:\\Users\\Stijn\\Documents\\PowerShell\\Scripts\\PSScriptAnalyzerSettings.psd1",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "anki.defaultDeck": "Learning",
+    
+}
