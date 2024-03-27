@@ -4,3 +4,4 @@ The configuration files in this repository are used to set up and manage the beh
 
 Check the functions in syncfiles.ps1 for additional aid in synchronising.
 
+Testing commit message

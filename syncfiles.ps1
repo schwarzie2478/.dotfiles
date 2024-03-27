@@ -59,7 +59,15 @@ function BackUpAndCommit {
     param(
     )
     BackupConfigFiles
-    $modified = {git status -s} 
+    $modified = git status -s
+    # if string is not empty take first element
+    if ($modified) {
+        $firstModified = $modified[0]
+    }else {
+        Write-Host "No files modified"
+        return
+    }
+
     $firstModified = $modified[0]
     git add .
     git commit -m "Backup config like $modified[0] on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
