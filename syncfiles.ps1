@@ -68,9 +68,8 @@ function BackUpAndCommit {
         return
     }
 
-    $firstModified = $modified[0]
     git add .
-    git commit -m "Backup config like $modified[0] on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
+    git commit -m "Backup config like $firstModified" -m "Backup config on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
 }
 function RestoreConfigFilesAfterPull {
     param(
