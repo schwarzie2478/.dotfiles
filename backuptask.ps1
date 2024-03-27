@@ -1,12 +1,13 @@
-# info about starting
-Write-Info( "Start backup task")
+
 
 # pop location currect script dir
 $scriptpath = $MyInvocation.MyCommand.Path
 $dir = Split-Path $scriptpath
 push-Location $dir
-
 . ./syncfiles.ps1
+
+# info about starting
+Write-Info( "Start backup task")
 
 BackUpAndCommit
 # write to info of last commit
