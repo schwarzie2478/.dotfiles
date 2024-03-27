@@ -35,7 +35,7 @@
     {
         "key": "ctrl+k ctrl+v",
         "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+m ctrl+x",

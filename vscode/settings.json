@@ -126,5 +126,16 @@
         }
     },
     "anki.defaultDeck": "Learning",
+    "commandOnAllFiles.commands": {},
+    "commandOnAllFiles.excludeFolders": [
+        "node_modules",
+        "out",
+        ".vscode-test",
+        "media",
+        ".git",
+        ".vscode",
+        ".ionide"
+    ],
+    "task.verboseLogging": true,
     
 }

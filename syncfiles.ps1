@@ -7,8 +7,6 @@ function BackupConfigFiles {
     Copy-Item $env:USERPROFILE\.gitconfig -Destination .\.gitconfig -Force
     # copy .gitattributes to the root of the repository
     Copy-Item $env:USERPROFILE\.gitattributes -Destination .\.gitattributes -Force
-    # copy .editorconfig to the root of the repository
-    Copy-Item $env:USERPROFILE\.editorconfig -Destination .\.editorconfig -Force
     # copy .gitmessage to the root of the repository
     Copy-Item $env:USERPROFILE\.gitmessage -Destination .\.gitmessage -Force
     # copy .npmrc to the root of the repository
@@ -61,8 +59,10 @@ function BackUpAndCommit {
     param(
     )
     BackupConfigFiles
+    $modified = {git status -s} 
+    $firstModified = $modified[0]
     git add .
-    git commit -m "syncfiles.ps1: backup config files on machine $env:COMPUTERNAME"
+    git commit -m "Backup config like $modified[0] on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
 }
 function RestoreConfigFilesAfterPull {
     param(

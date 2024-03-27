@@ -40,7 +40,7 @@ Set-Alias -Name hyper -Value Set-HyperCloud
 
 # make alias for asking github copilot cli for a given suggestion
 Function Get-CopilotSuggestion{
-    gh copilot suggest $args
+    gh copilot suggest -t shell $args
 }
 # set alias for Get-CopilotSuggestion to suggest
 Set-Alias -Name ask -Value Get-CopilotSuggestion
