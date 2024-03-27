@@ -1,81 +1,53 @@
-function BackupConfigFiles {
-    param(
-    )
-    # copy .gitignore to the root of the repository
-    Copy-Item $env:USERPROFILE\.gitignore -Destination .\.gitignore -Force
-    # copy .gitconfig to the root of the repository
-    Copy-Item $env:USERPROFILE\.gitconfig -Destination .\.gitconfig -Force
-    # copy .gitattributes to the root of the repository
-    Copy-Item $env:USERPROFILE\.gitattributes -Destination .\.gitattributes -Force
-    # copy .gitmessage to the root of the repository
-    Copy-Item $env:USERPROFILE\.gitmessage -Destination .\.gitmessage -Force
-    # copy .npmrc to the root of the repository
-    Copy-Item $env:USERPROFILE\.npmrc -Destination .\.npmrc -Force
-    # copy .vscode/extensions/extensions.json to the root of the repository
-    Copy-Item $env:USERPROFILE\.vscode\extensions\extensions.json -Destination .\vscode\extensions\extensions.json -Recurse -Force
-    # copy vscode settings from appdata to the root of the repository
-    Copy-Item $env:USERPROFILE\AppData\Roaming\Code\User\settings.json -Destination .\vscode\settings.json -Force
-    # copy vscode snippets from appdata to the root of the repository
-    Copy-Item $env:USERPROFILE\AppData\Roaming\Code\User\snippets -Destination .\vscode\snippets -Recurse -Force
-    # copy vscode keybindings from appdata to the root of the repository
-    Copy-Item $env:USERPROFILE\AppData\Roaming\Code\User\keybindings.json -Destination .\vscode\keybindings.json -Force
-    # copy powershell config file from Documents/Powershell to the root of the repository
-    Copy-Item $env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 -Destination .\Microsoft.PowerShell_profile.ps1 -Force
-    # copy VS code powershell config file from Documents/Powershell to the root of the repository 
-    Copy-Item $env:USERPROFILE\Documents\PowerShell\Microsoft.VSCode_profile.ps1 -Destination .\Microsoft.VSCode_profile.ps1 -Force
+. $PSScriptRoot\configFiles.ps1
+. $PSScriptRoot\helperFunctions.ps1
+. $PSScriptRoot\gitFunctions.ps1
 
+function Copy-FilesToRepoRoot($copyData) {
+    foreach ($fileName in $copyData.Keys) {
+        $sourcePath = Join-Path -Path $env:USERPROFILE -ChildPath $copyData[$fileName]["fileLocation"]
+        $destinationParent = $copyData[$fileName]["syncDir"]
+        $destinationPath = Join-Path -Path $destinationParent -ChildPath $fileName
+        Copy-Item $sourcePath -Destination $destinationPath -Force
+    }
 }
-# reverse previous function
-function RestoreConfigFiles {
-    param(
-    )
-    # copy .gitignore to the root of the user profile
-    Copy-Item .\.gitignore -Destination $env:USERPROFILE\.gitignore -Force
-    # copy .gitconfig to the root of the user profile
-    Copy-Item .\.gitconfig -Destination $env:USERPROFILE\.gitconfig -Force
-    # copy .gitattributes to the root of the user profile
-    Copy-Item .\.gitattributes -Destination $env:USERPROFILE\.gitattributes -Force
-    # copy .editorconfig to the root of the user profile
-    Copy-Item .\.editorconfig -Destination $env:USERPROFILE\.editorconfig -Force
-    # copy .gitmessage to the root of the user profile
-    Copy-Item .\.gitmessage -Destination $env:USERPROFILE\.gitmessage -Force
-    # copy .npmrc to the root of the user profile
-    Copy-Item .\.npmrc -Destination $env:USERPROFILE\.npmrc -Force
-    # copy .vscode/extensions/extensions.json to the root of the user profile
-    Copy-Item .\vscode\extensions\extensions.json -Destination $env:USERPROFILE\.vscode\extensions\extensions.json -Force
-    # copy vscode settings from the root of the repository to appdata
-    Copy-Item .\vscode\settings.json -Destination $env:USERPROFILE\AppData\Roaming\Code\User\settings.json -Force
-    # copy vscode snippets from the root of the repository to appdata
-    Copy-Item .\vscode\snippets -Destination $env:USERPROFILE\AppData\Roaming\Code\User\snippets -Recurse -Force
-    # copy vscode keybindings from the root of the repository to appdata
-    Copy-Item .\vscode\keybindings.json -Destination $env:USERPROFILE\AppData\Roaming\Code\User\keybindings.json -Force
-    # copy powershell config file from the root of the repository to Documents/Powershell
-    Copy-Item .\Microsoft.PowerShell_profile.ps1 -Destination $env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 -Force
-    # copy VS code powershell config file from the root of the repository to Documents/Powershell
-    Copy-Item .\Microsoft.VSCode_profile.ps1 -Destination $env:USERPROFILE\Documents\PowerShell\Microsoft.VSCode_profile.ps1 -Force
+
+# copy back to source files from repo
+# TODO: research if needed
+
+function Backup {
+    param()
+    Copy-FilesToRepoRoot $configItems
+    BackUpInstalledModulesToJson
 }
+
+# function to pull from remote and return false if there are conflicts
+
 
 function BackUpAndCommit {
     param(
     )
-    BackupConfigFiles
+    git pull
+    # if there are conflicts, return
+    if (Check-Git-Conflicts) {
+        return
+    }
+
+    Backup
     $modified = git status -s
     # if string is not empty take first element
     if ($modified) {
         $firstModified = $modified[0]
     }else {
-        Write-Host "No files modified"
+        Info "No files modified"
         return
     }
 
     git add .
     git commit -m "Backup config like $firstModified" -m "Backup config on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
-}
-function RestoreConfigFilesAfterPull {
-    param(
-    )
-    git pull
-    RestoreConfigFiles
+    if (Check-Git-Conflicts) {
+        return
+    }
+    git push
 }
 
 # install vs code plugins from extensions.json in commandline if not installed  and after confirming with the user
@@ -119,10 +91,10 @@ function GetInstalledModules {
     Get-Module -ListAvailable | Select-Object Name, Version, Path
 }
 # retrieve list of installed modules in powershell and save to a json file
-function GetInstalledModulesToJson {
+function BackUpInstalledModulesToJson {
     param(
     )
-    GetInstalledModules | ConvertTo-Json | Out-File .\powershell\installedModules.json
+    GetInstalledModules | ConvertTo-Json | Out-File $PSScriptRoot\powershell\installedModules.json
 }
 # for all modules in installedModules.json, install them after confirming with the user
 function InstallModulesFromJson {
