@@ -11,8 +11,7 @@ function Copy-FilesToRepoRoot($copyData) {
     }
 }
 
-# copy back to source files from repo
-# TODO: research if needed
+
 
 function Backup {
     param()

@@ -1,9 +1,7 @@
 
 
 # pop location currect script dir
-$scriptpath = $MyInvocation.MyCommand.Path
-$dir = Split-Path $scriptpath
-push-Location $dir
+push-Location $PSScriptRoot
 . ./syncfiles.ps1
 
 # info about starting
