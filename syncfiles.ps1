@@ -28,7 +28,7 @@ function BackUpAndCommit {
     )
     git pull
     # if there are conflicts, return
-    if (Check-Git-Conflicts) {
+    if (Test-Git-Conflicts) {
         return
     }
 
@@ -44,7 +44,7 @@ function BackUpAndCommit {
 
     git add .
     git commit -m "Backup config like $firstModified" -m "Backup config on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
-    if (Check-Git-Conflicts) {
+    if (Test-Git-Conflicts) {
         return
     }
     git push
