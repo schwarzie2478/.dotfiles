@@ -36,14 +36,18 @@ function BackUpAndCommit {
     $modified = git status -s
     # if string is not empty take first element
     if ($modified) {
-        $firstModified = $modified[0]
+        if($modified -is [string]) {
+            $firstModified = $modified
+        } elseif ($modified -is [array]) {  
+            $firstModified = $modified[0]
+        }
     }else {
         Info "No files modified"
         return
     }
 
     git add .
-    git commit -m "Backup config like $firstModified" -m "Backup config on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
+    git commit -m $"Backup config like $firstModified" -m "Backup config on machine $env:COMPUTERNAME\n\n Modified files:  \n$modified"
     if (Test-Git-Conflicts) {
         return
     }
