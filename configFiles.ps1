@@ -25,7 +25,7 @@ $configItems = @{
     };
     "snippets" = @{
         "syncDir" = "vscode";
-        "fileLocation" = "AppData\Roaming\Code\User\snippets"
+        "fileLocation" = "AppData\Roaming\Code\User\snippets\*"
     };
     "keybindings.json" = @{
         "syncDir" = "vscode";
