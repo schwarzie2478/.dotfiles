@@ -128,5 +128,5 @@ function ListScoopPackages {
 function ListChocoPackages {
     param(
     )
-    choco list --local-only > tools\choco-packages.txt
+    choco list > tools\choco-packages.txt
 }
