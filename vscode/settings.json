@@ -94,8 +94,8 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "powermode.enabled": true,
     "powermode.presets": "flames",
-    "powermode.combo.threshold": 50,
-    "vim.whichwrap": "b,s,h,l",
+    "powermode.combo.threshold": 0,
+    "vim.whichwrap": "b,s,h,l,<,>,[,]",
     "hediet.vscode-drawio.resizeImages": null,
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
@@ -137,6 +137,6 @@
         ".ionide"
     ],
     "task.verboseLogging": true,
-    "glassit.alpha": 245,
+    "glassit.alpha": 235,
     
 }
