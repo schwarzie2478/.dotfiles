@@ -20,7 +20,7 @@ Set-Alias google Search-Google
 Function OpenNeoVimConfigFile{ nvim $env:userprofile\AppData\local\nvim\init.lua}
 set-alias -Name nvim-config -Value OpenNeoVimConfigFile
 
-Function OpenPowershellConfigFile{ nvim $Profile}
+Function OpenPowershellConfigFile{ code $Profile}
 set-alias -Name ps-config -Value OpenPowershellConfigFile
 
 # set audio device to Speakers (Realtek High Definition Audio)
@@ -45,4 +45,8 @@ Function Get-CopilotSuggestion{
 # set alias for Get-CopilotSuggestion to suggest
 Set-Alias -Name ask -Value Get-CopilotSuggestion
 
+Function Copy-Config{
+& "d:\Sources\.dotfiles\backuptask.ps1"
+}
+set-alias -Name saveconfig -Value Copy-Config
 pop-location

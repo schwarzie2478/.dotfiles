@@ -41,6 +41,96 @@
         "key": "ctrl+m ctrl+x",
         "command": "-editor.action.insertSnippet",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    },
+    {
+        "key": "space",
+        "command": "refactorPreview.toggleCheckedState",
+        "when": "listFocus && refactorPreview.enabled && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "space",
+        "command": "-refactorPreview.toggleCheckedState",
+        "when": "listFocus && refactorPreview.enabled && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "space",
+        "command": "list.stickyScrolltoggleExpand",
+        "when": "treestickyScrollFocused"
+    },
+    {
+        "key": "space",
+        "command": "-list.stickyScrolltoggleExpand",
+        "when": "treestickyScrollFocused"
+    },
+    {
+        "key": "space",
+        "command": "list.toggleExpand",
+        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "space",
+        "command": "-list.toggleExpand",
+        "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+    },
+    {
+        "key": "space",
+        "command": "notification.toggle",
+        "when": "notificationFocus"
+    },
+    {
+        "key": "space",
+        "command": "-notification.toggle",
+        "when": "notificationFocus"
+    },
+    {
+        "key": "space",
+        "command": "debug.toggleBreakpoint",
+        "when": "breakpointsFocused && !inputFocus"
+    },
+    {
+        "key": "space",
+        "command": "-debug.toggleBreakpoint",
+        "when": "breakpointsFocused && !inputFocus"
+    },
+    {
+        "key": "space",
+        "command": "filesExplorer.openFilePreserveFocus",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "space",
+        "command": "-filesExplorer.openFilePreserveFocus",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+    },
+    {
+        "key": "space",
+        "command": "breadcrumbs.revealFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "space",
+        "command": "-breadcrumbs.revealFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "shift+space",
+        "command": "tidalcycles.sounds.play",
+        "when": "listFocus && listHasSelectionOrFocus"
+    },
+    {
+        "key": "space",
+        "command": "-tidalcycles.sounds.play",
+        "when": "listFocus && listHasSelectionOrFocus"
+    },
+    {
+        "key": "space",
+        "command": "luna.tool.handUntilRelease",
+        "when": "luna:focused && !sideBarFocus && activeCustomEditorId == 'luna.editor' && focusedView == ''"
+    },
+    {
+        "key": "space",
+        "command": "-luna.tool.handUntilRelease",
+        "when": "luna:focused && !sideBarFocus && activeCustomEditorId == 'luna.editor' && focusedView == ''"
     }
     
 ]

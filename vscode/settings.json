@@ -137,5 +137,6 @@
         ".ionide"
     ],
     "task.verboseLogging": true,
+    "glassit.alpha": 245,
     
 }
