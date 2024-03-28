@@ -17,6 +17,8 @@ function Backup {
     param()
     Copy-FilesToRepoRoot $configItems
     BackUpInstalledModulesToJson
+    ListChocoPackages
+    ListScoopPackages
 }
 
 # function to pull from remote and return false if there are conflicts
@@ -115,7 +117,16 @@ function InstallModulesFromJson {
     }
 }
 
+# function to list scoop packages
+function ListScoopPackages {
+    param(
+    )
+   scoop list > tools\scoop-packages.txt
+}
 
-
-
-
+# function to list choco packages
+function ListChocoPackages {
+    param(
+    )
+    choco list --local-only > tools\choco-packages.txt
+}
