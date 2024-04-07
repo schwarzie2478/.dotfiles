@@ -5,6 +5,7 @@ Name                          Version      Source Updated             Info
 adom                          3.3.3        games  2023-01-11 16:51:55 
 ani-cli                       3.4          extras 2023-01-11 16:54:34 
 axel                          2.16.1-1     main   2023-01-11 16:47:04 
+dapr-cli                      1.13.0       main   2024-04-07 14:32:24 
 emacs                         28.2         extras 2023-02-17 12:47:14 
 ffmpeg                        5.1.2        main   2023-01-11 16:55:48 
 fzf                           0.35.1       main   2023-01-11 17:08:28 

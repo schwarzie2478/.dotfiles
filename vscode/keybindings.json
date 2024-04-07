@@ -115,7 +115,7 @@
     {
         "key": "shift+space",
         "command": "tidalcycles.sounds.play",
-        "when": "listFocus && listHasSelectionOrFocus"
+        "when": "listFocus && listHasSelectionOrFocus && editorLangId == tidal"
     },
     {
         "key": "space",
