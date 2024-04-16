@@ -24,3 +24,5 @@
 	list = branch -l
 	undo = reset --soft HEAD~1
 	diff-words = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all

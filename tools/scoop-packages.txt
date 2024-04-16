@@ -17,6 +17,7 @@ mpv                           0.35.0       extras 2023-01-11 16:52:35
 mpv-git                       20230108     extras 2023-01-11 16:53:06 
 msbuild-structured-log-viewer 2.2.212      extras 2024-03-22 09:31:36 
 pandoc                        3.1.12.3     main   2024-03-24 22:22:35 
+rapidee                       9.2.937      extras 2024-04-16 20:12:56 
 sudo                          0.2020.01.26 main   2023-01-11 16:25:40 
 vim                           9.0          main   2023-03-02 19:47:31 
 vimtutor                      0.2018.07.25 main   2023-03-02 19:47:57 
