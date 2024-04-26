@@ -14,6 +14,18 @@
   {
     "Name": "Az",
     "Version": {
+      "Major": 11,
+      "Minor": 5,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az\\11.5.0\\Az.psd1"
+  },
+  {
+    "Name": "Az",
+    "Version": {
       "Major": 9,
       "Minor": 3,
       "Build": 0,
@@ -22,6 +34,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az\\9.3.0\\Az.psd1"
+  },
+  {
+    "Name": "Az.Accounts",
+    "Version": {
+      "Major": 2,
+      "Minor": 17,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Accounts\\2.17.0\\Az.Accounts.psd1"
   },
   {
     "Name": "Az.Accounts",
@@ -46,6 +70,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Advisor\\2.0.0\\Az.Advisor.psd1"
+  },
+  {
+    "Name": "Az.Aks",
+    "Version": {
+      "Major": 6,
+      "Minor": 0,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Aks\\6.0.2\\Az.Aks.psd1"
   },
   {
     "Name": "Az.Aks",
@@ -84,6 +120,30 @@
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ApiManagement\\4.0.2\\Az.ApiManagement.psd1"
   },
   {
+    "Name": "Az.App",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.App\\1.0.0\\Az.App.psd1"
+  },
+  {
+    "Name": "Az.AppConfiguration",
+    "Version": {
+      "Major": 1,
+      "Minor": 3,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.AppConfiguration\\1.3.0\\Az.AppConfiguration.psd1"
+  },
+  {
     "Name": "Az.AppConfiguration",
     "Version": {
       "Major": 1,
@@ -100,12 +160,48 @@
     "Version": {
       "Major": 2,
       "Minor": 2,
+      "Build": 4,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ApplicationInsights\\2.2.4\\Az.ApplicationInsights.psd1"
+  },
+  {
+    "Name": "Az.ApplicationInsights",
+    "Version": {
+      "Major": 2,
+      "Minor": 2,
       "Build": 1,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ApplicationInsights\\2.2.1\\Az.ApplicationInsights.psd1"
+  },
+  {
+    "Name": "Az.ArcResourceBridge",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ArcResourceBridge\\1.0.0\\Az.ArcResourceBridge.psd1"
+  },
+  {
+    "Name": "Az.Attestation",
+    "Version": {
+      "Major": 2,
+      "Minor": 0,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Attestation\\2.0.1\\Az.Attestation.psd1"
   },
   {
     "Name": "Az.Attestation",
@@ -120,6 +216,30 @@
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Attestation\\2.0.0\\Az.Attestation.psd1"
   },
   {
+    "Name": "Az.Automanage",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Automanage\\1.0.0\\Az.Automanage.psd1"
+  },
+  {
+    "Name": "Az.Automation",
+    "Version": {
+      "Major": 1,
+      "Minor": 10,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Automation\\1.10.0\\Az.Automation.psd1"
+  },
+  {
     "Name": "Az.Automation",
     "Version": {
       "Major": 1,
@@ -130,6 +250,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Automation\\1.9.0\\Az.Automation.psd1"
+  },
+  {
+    "Name": "Az.Batch",
+    "Version": {
+      "Major": 3,
+      "Minor": 5,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Batch\\3.5.0\\Az.Batch.psd1"
   },
   {
     "Name": "Az.Batch",
@@ -148,12 +280,36 @@
     "Version": {
       "Major": 2,
       "Minor": 0,
+      "Build": 3,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Billing\\2.0.3\\Az.Billing.psd1"
+  },
+  {
+    "Name": "Az.Billing",
+    "Version": {
+      "Major": 2,
+      "Minor": 0,
       "Build": 0,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Billing\\2.0.0\\Az.Billing.psd1"
+  },
+  {
+    "Name": "Az.Cdn",
+    "Version": {
+      "Major": 3,
+      "Minor": 1,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Cdn\\3.1.2\\Az.Cdn.psd1"
   },
   {
     "Name": "Az.Cdn",
@@ -166,6 +322,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Cdn\\2.1.0\\Az.Cdn.psd1"
+  },
+  {
+    "Name": "Az.CloudService",
+    "Version": {
+      "Major": 2,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.CloudService\\2.0.0\\Az.CloudService.psd1"
   },
   {
     "Name": "Az.CloudService",
@@ -183,6 +351,18 @@
     "Name": "Az.CognitiveServices",
     "Version": {
       "Major": 1,
+      "Minor": 14,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.CognitiveServices\\1.14.1\\Az.CognitiveServices.psd1"
+  },
+  {
+    "Name": "Az.CognitiveServices",
+    "Version": {
+      "Major": 1,
       "Minor": 12,
       "Build": 0,
       "Revision": -1,
@@ -190,6 +370,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.CognitiveServices\\1.12.0\\Az.CognitiveServices.psd1"
+  },
+  {
+    "Name": "Az.Compute",
+    "Version": {
+      "Major": 7,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Compute\\7.2.0\\Az.Compute.psd1"
   },
   {
     "Name": "Az.Compute",
@@ -218,6 +410,18 @@
   {
     "Name": "Az.ContainerInstance",
     "Version": {
+      "Major": 4,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ContainerInstance\\4.0.0\\Az.ContainerInstance.psd1"
+  },
+  {
+    "Name": "Az.ContainerInstance",
+    "Version": {
       "Major": 3,
       "Minor": 1,
       "Build": 0,
@@ -230,6 +434,18 @@
   {
     "Name": "Az.ContainerRegistry",
     "Version": {
+      "Major": 4,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ContainerRegistry\\4.2.0\\Az.ContainerRegistry.psd1"
+  },
+  {
+    "Name": "Az.ContainerRegistry",
+    "Version": {
       "Major": 3,
       "Minor": 0,
       "Build": 1,
@@ -238,6 +454,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ContainerRegistry\\3.0.1\\Az.ContainerRegistry.psd1"
+  },
+  {
+    "Name": "Az.CosmosDB",
+    "Version": {
+      "Major": 1,
+      "Minor": 14,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.CosmosDB\\1.14.2\\Az.CosmosDB.psd1"
   },
   {
     "Name": "Az.CosmosDB",
@@ -267,6 +495,18 @@
     "Name": "Az.Databricks",
     "Version": {
       "Major": 1,
+      "Minor": 7,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Databricks\\1.7.1\\Az.Databricks.psd1"
+  },
+  {
+    "Name": "Az.Databricks",
+    "Version": {
+      "Major": 1,
       "Minor": 4,
       "Build": 0,
       "Revision": -1,
@@ -279,6 +519,18 @@
     "Name": "Az.DataFactory",
     "Version": {
       "Major": 1,
+      "Minor": 18,
+      "Build": 3,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DataFactory\\1.18.3\\Az.DataFactory.psd1"
+  },
+  {
+    "Name": "Az.DataFactory",
+    "Version": {
+      "Major": 1,
       "Minor": 16,
       "Build": 11,
       "Revision": -1,
@@ -286,6 +538,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DataFactory\\1.16.11\\Az.DataFactory.psd1"
+  },
+  {
+    "Name": "Az.DataLakeAnalytics",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 3,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DataLakeAnalytics\\1.0.3\\Az.DataLakeAnalytics.psd1"
   },
   {
     "Name": "Az.DataLakeAnalytics",
@@ -310,6 +574,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DataLakeStore\\1.3.0\\Az.DataLakeStore.psd1"
+  },
+  {
+    "Name": "Az.DataProtection",
+    "Version": {
+      "Major": 2,
+      "Minor": 3,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DataProtection\\2.3.0\\Az.DataProtection.psd1"
   },
   {
     "Name": "Az.DataProtection",
@@ -350,6 +626,18 @@
   {
     "Name": "Az.DesktopVirtualization",
     "Version": {
+      "Major": 4,
+      "Minor": 3,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DesktopVirtualization\\4.3.0\\Az.DesktopVirtualization.psd1"
+  },
+  {
+    "Name": "Az.DesktopVirtualization",
+    "Version": {
       "Major": 3,
       "Minor": 1,
       "Build": 1,
@@ -358,6 +646,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DesktopVirtualization\\3.1.1\\Az.DesktopVirtualization.psd1"
+  },
+  {
+    "Name": "Az.DevCenter",
+    "Version": {
+      "Major": 1,
+      "Minor": 1,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.DevCenter\\1.1.0\\Az.DevCenter.psd1"
   },
   {
     "Name": "Az.DevTestLabs",
@@ -375,6 +675,18 @@
     "Name": "Az.Dns",
     "Version": {
       "Major": 1,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Dns\\1.2.0\\Az.Dns.psd1"
+  },
+  {
+    "Name": "Az.Dns",
+    "Version": {
+      "Major": 1,
       "Minor": 1,
       "Build": 2,
       "Revision": -1,
@@ -382,6 +694,30 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Dns\\1.1.2\\Az.Dns.psd1"
+  },
+  {
+    "Name": "Az.ElasticSan",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ElasticSan\\1.0.1\\Az.ElasticSan.psd1"
+  },
+  {
+    "Name": "Az.EventGrid",
+    "Version": {
+      "Major": 1,
+      "Minor": 6,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.EventGrid\\1.6.1\\Az.EventGrid.psd1"
   },
   {
     "Name": "Az.EventGrid",
@@ -398,6 +734,18 @@
   {
     "Name": "Az.EventHub",
     "Version": {
+      "Major": 4,
+      "Minor": 2,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.EventHub\\4.2.1\\Az.EventHub.psd1"
+  },
+  {
+    "Name": "Az.EventHub",
+    "Version": {
       "Major": 3,
       "Minor": 2,
       "Build": 0,
@@ -406,6 +754,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.EventHub\\3.2.0\\Az.EventHub.psd1"
+  },
+  {
+    "Name": "Az.FrontDoor",
+    "Version": {
+      "Major": 1,
+      "Minor": 10,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.FrontDoor\\1.10.0\\Az.FrontDoor.psd1"
   },
   {
     "Name": "Az.FrontDoor",
@@ -424,12 +784,36 @@
     "Version": {
       "Major": 4,
       "Minor": 0,
+      "Build": 7,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Functions\\4.0.7\\Az.Functions.psd1"
+  },
+  {
+    "Name": "Az.Functions",
+    "Version": {
+      "Major": 4,
+      "Minor": 0,
       "Build": 6,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Functions\\4.0.6\\Az.Functions.psd1"
+  },
+  {
+    "Name": "Az.HDInsight",
+    "Version": {
+      "Major": 6,
+      "Minor": 1,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.HDInsight\\6.1.0\\Az.HDInsight.psd1"
   },
   {
     "Name": "Az.HDInsight",
@@ -460,12 +844,36 @@
     "Version": {
       "Major": 2,
       "Minor": 7,
+      "Build": 5,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.IotHub\\2.7.5\\Az.IotHub.psd1"
+  },
+  {
+    "Name": "Az.IotHub",
+    "Version": {
+      "Major": 2,
+      "Minor": 7,
       "Build": 4,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.IotHub\\2.7.4\\Az.IotHub.psd1"
+  },
+  {
+    "Name": "Az.KeyVault",
+    "Version": {
+      "Major": 5,
+      "Minor": 2,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.KeyVault\\5.2.2\\Az.KeyVault.psd1"
   },
   {
     "Name": "Az.KeyVault",
@@ -483,6 +891,18 @@
     "Name": "Az.Kusto",
     "Version": {
       "Major": 2,
+      "Minor": 3,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Kusto\\2.3.0\\Az.Kusto.psd1"
+  },
+  {
+    "Name": "Az.Kusto",
+    "Version": {
+      "Major": 2,
       "Minor": 1,
       "Build": 0,
       "Revision": -1,
@@ -490,6 +910,30 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Kusto\\2.1.0\\Az.Kusto.psd1"
+  },
+  {
+    "Name": "Az.LoadTesting",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.LoadTesting\\1.0.0\\Az.LoadTesting.psd1"
+  },
+  {
+    "Name": "Az.LogicApp",
+    "Version": {
+      "Major": 1,
+      "Minor": 5,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.LogicApp\\1.5.1\\Az.LogicApp.psd1"
   },
   {
     "Name": "Az.LogicApp",
@@ -516,6 +960,30 @@
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.MachineLearning\\1.1.3\\Az.MachineLearning.psd1"
   },
   {
+    "Name": "Az.MachineLearningServices",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.MachineLearningServices\\1.0.0\\Az.MachineLearningServices.psd1"
+  },
+  {
+    "Name": "Az.Maintenance",
+    "Version": {
+      "Major": 1,
+      "Minor": 4,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Maintenance\\1.4.1\\Az.Maintenance.psd1"
+  },
+  {
     "Name": "Az.Maintenance",
     "Version": {
       "Major": 1,
@@ -526,6 +994,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Maintenance\\1.2.1\\Az.Maintenance.psd1"
+  },
+  {
+    "Name": "Az.ManagedServiceIdentity",
+    "Version": {
+      "Major": 1,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ManagedServiceIdentity\\1.2.0\\Az.ManagedServiceIdentity.psd1"
   },
   {
     "Name": "Az.ManagedServiceIdentity",
@@ -568,12 +1048,36 @@
     "Version": {
       "Major": 1,
       "Minor": 1,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Media\\1.1.2\\Az.Media.psd1"
+  },
+  {
+    "Name": "Az.Media",
+    "Version": {
+      "Major": 1,
+      "Minor": 1,
       "Build": 1,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Media\\1.1.1\\Az.Media.psd1"
+  },
+  {
+    "Name": "Az.Migrate",
+    "Version": {
+      "Major": 2,
+      "Minor": 3,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Migrate\\2.3.0\\Az.Migrate.psd1"
   },
   {
     "Name": "Az.Migrate",
@@ -586,6 +1090,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Migrate\\2.1.0\\Az.Migrate.psd1"
+  },
+  {
+    "Name": "Az.Monitor",
+    "Version": {
+      "Major": 5,
+      "Minor": 1,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Monitor\\5.1.1\\Az.Monitor.psd1"
   },
   {
     "Name": "Az.Monitor",
@@ -604,12 +1120,36 @@
     "Version": {
       "Major": 1,
       "Minor": 1,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.MySql\\1.1.1\\Az.MySql.psd1"
+  },
+  {
+    "Name": "Az.MySql",
+    "Version": {
+      "Major": 1,
+      "Minor": 1,
       "Build": 0,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.MySql\\1.1.0\\Az.MySql.psd1"
+  },
+  {
+    "Name": "Az.Network",
+    "Version": {
+      "Major": 7,
+      "Minor": 4,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Network\\7.4.1\\Az.Network.psd1"
   },
   {
     "Name": "Az.Network",
@@ -622,6 +1162,42 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Network\\5.3.0\\Az.Network.psd1"
+  },
+  {
+    "Name": "Az.NetworkCloud",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.NetworkCloud\\1.0.0\\Az.NetworkCloud.psd1"
+  },
+  {
+    "Name": "Az.Nginx",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Nginx\\1.0.0\\Az.Nginx.psd1"
+  },
+  {
+    "Name": "Az.NotificationHubs",
+    "Version": {
+      "Major": 1,
+      "Minor": 1,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.NotificationHubs\\1.1.2\\Az.NotificationHubs.psd1"
   },
   {
     "Name": "Az.NotificationHubs",
@@ -651,6 +1227,18 @@
     "Name": "Az.PolicyInsights",
     "Version": {
       "Major": 1,
+      "Minor": 6,
+      "Build": 5,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.PolicyInsights\\1.6.5\\Az.PolicyInsights.psd1"
+  },
+  {
+    "Name": "Az.PolicyInsights",
+    "Version": {
+      "Major": 1,
       "Minor": 5,
       "Build": 1,
       "Revision": -1,
@@ -674,6 +1262,18 @@
   {
     "Name": "Az.PowerBIEmbedded",
     "Version": {
+      "Major": 2,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.PowerBIEmbedded\\2.0.0\\Az.PowerBIEmbedded.psd1"
+  },
+  {
+    "Name": "Az.PowerBIEmbedded",
+    "Version": {
       "Major": 1,
       "Minor": 2,
       "Build": 0,
@@ -682,6 +1282,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.PowerBIEmbedded\\1.2.0\\Az.PowerBIEmbedded.psd1"
+  },
+  {
+    "Name": "Az.PrivateDns",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 4,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.PrivateDns\\1.0.4\\Az.PrivateDns.psd1"
   },
   {
     "Name": "Az.PrivateDns",
@@ -699,6 +1311,18 @@
     "Name": "Az.RecoveryServices",
     "Version": {
       "Major": 6,
+      "Minor": 8,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.RecoveryServices\\6.8.0\\Az.RecoveryServices.psd1"
+  },
+  {
+    "Name": "Az.RecoveryServices",
+    "Version": {
+      "Major": 6,
       "Minor": 1,
       "Build": 2,
       "Revision": -1,
@@ -706,6 +1330,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.RecoveryServices\\6.1.2\\Az.RecoveryServices.psd1"
+  },
+  {
+    "Name": "Az.RedisCache",
+    "Version": {
+      "Major": 1,
+      "Minor": 9,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.RedisCache\\1.9.0\\Az.RedisCache.psd1"
   },
   {
     "Name": "Az.RedisCache",
@@ -723,6 +1359,18 @@
     "Name": "Az.RedisEnterpriseCache",
     "Version": {
       "Major": 1,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.RedisEnterpriseCache\\1.2.0\\Az.RedisEnterpriseCache.psd1"
+  },
+  {
+    "Name": "Az.RedisEnterpriseCache",
+    "Version": {
+      "Major": 1,
       "Minor": 1,
       "Build": 0,
       "Revision": -1,
@@ -730,6 +1378,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.RedisEnterpriseCache\\1.1.0\\Az.RedisEnterpriseCache.psd1"
+  },
+  {
+    "Name": "Az.Relay",
+    "Version": {
+      "Major": 2,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Relay\\2.0.0\\Az.Relay.psd1"
   },
   {
     "Name": "Az.Relay",
@@ -747,6 +1407,18 @@
     "Name": "Az.ResourceMover",
     "Version": {
       "Major": 1,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ResourceMover\\1.2.0\\Az.ResourceMover.psd1"
+  },
+  {
+    "Name": "Az.ResourceMover",
+    "Version": {
+      "Major": 1,
       "Minor": 1,
       "Build": 0,
       "Revision": -1,
@@ -754,6 +1426,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ResourceMover\\1.1.0\\Az.ResourceMover.psd1"
+  },
+  {
+    "Name": "Az.Resources",
+    "Version": {
+      "Major": 6,
+      "Minor": 16,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Resources\\6.16.1\\Az.Resources.psd1"
   },
   {
     "Name": "Az.Resources",
@@ -771,6 +1455,18 @@
     "Name": "Az.Security",
     "Version": {
       "Major": 1,
+      "Minor": 6,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Security\\1.6.1\\Az.Security.psd1"
+  },
+  {
+    "Name": "Az.Security",
+    "Version": {
+      "Major": 1,
       "Minor": 3,
       "Build": 0,
       "Revision": -1,
@@ -783,6 +1479,18 @@
     "Name": "Az.SecurityInsights",
     "Version": {
       "Major": 3,
+      "Minor": 1,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.SecurityInsights\\3.1.1\\Az.SecurityInsights.psd1"
+  },
+  {
+    "Name": "Az.SecurityInsights",
+    "Version": {
+      "Major": 3,
       "Minor": 0,
       "Build": 1,
       "Revision": -1,
@@ -790,6 +1498,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.SecurityInsights\\3.0.1\\Az.SecurityInsights.psd1"
+  },
+  {
+    "Name": "Az.ServiceBus",
+    "Version": {
+      "Major": 3,
+      "Minor": 1,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ServiceBus\\3.1.0\\Az.ServiceBus.psd1"
   },
   {
     "Name": "Az.ServiceBus",
@@ -807,6 +1527,18 @@
     "Name": "Az.ServiceFabric",
     "Version": {
       "Major": 3,
+      "Minor": 3,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ServiceFabric\\3.3.2\\Az.ServiceFabric.psd1"
+  },
+  {
+    "Name": "Az.ServiceFabric",
+    "Version": {
+      "Major": 3,
       "Minor": 1,
       "Build": 0,
       "Revision": -1,
@@ -814,6 +1546,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.ServiceFabric\\3.1.0\\Az.ServiceFabric.psd1"
+  },
+  {
+    "Name": "Az.SignalR",
+    "Version": {
+      "Major": 2,
+      "Minor": 0,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.SignalR\\2.0.0\\Az.SignalR.psd1"
   },
   {
     "Name": "Az.SignalR",
@@ -831,6 +1575,18 @@
     "Name": "Az.Sql",
     "Version": {
       "Major": 4,
+      "Minor": 14,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Sql\\4.14.0\\Az.Sql.psd1"
+  },
+  {
+    "Name": "Az.Sql",
+    "Version": {
+      "Major": 4,
       "Minor": 2,
       "Build": 0,
       "Revision": -1,
@@ -838,6 +1594,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Sql\\4.2.0\\Az.Sql.psd1"
+  },
+  {
+    "Name": "Az.SqlVirtualMachine",
+    "Version": {
+      "Major": 2,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.SqlVirtualMachine\\2.2.0\\Az.SqlVirtualMachine.psd1"
   },
   {
     "Name": "Az.SqlVirtualMachine",
@@ -854,6 +1622,18 @@
   {
     "Name": "Az.StackHCI",
     "Version": {
+      "Major": 2,
+      "Minor": 3,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.StackHCI\\2.3.1\\Az.StackHCI.psd1"
+  },
+  {
+    "Name": "Az.StackHCI",
+    "Version": {
       "Major": 1,
       "Minor": 4,
       "Build": 1,
@@ -862,6 +1642,30 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.StackHCI\\1.4.1\\Az.StackHCI.psd1"
+  },
+  {
+    "Name": "Az.StackHCIVM",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.StackHCIVM\\1.0.2\\Az.StackHCIVM.psd1"
+  },
+  {
+    "Name": "Az.Storage",
+    "Version": {
+      "Major": 6,
+      "Minor": 1,
+      "Build": 3,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Storage\\6.1.3\\Az.Storage.psd1"
   },
   {
     "Name": "Az.Storage",
@@ -874,6 +1678,30 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Storage\\5.3.0\\Az.Storage.psd1"
+  },
+  {
+    "Name": "Az.StorageMover",
+    "Version": {
+      "Major": 1,
+      "Minor": 3,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.StorageMover\\1.3.0\\Az.StorageMover.psd1"
+  },
+  {
+    "Name": "Az.StorageSync",
+    "Version": {
+      "Major": 2,
+      "Minor": 1,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.StorageSync\\2.1.1\\Az.StorageSync.psd1"
   },
   {
     "Name": "Az.StorageSync",
@@ -904,12 +1732,36 @@
     "Version": {
       "Major": 1,
       "Minor": 0,
+      "Build": 1,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Support\\1.0.1\\Az.Support.psd1"
+  },
+  {
+    "Name": "Az.Support",
+    "Version": {
+      "Major": 1,
+      "Minor": 0,
       "Build": 0,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Support\\1.0.0\\Az.Support.psd1"
+  },
+  {
+    "Name": "Az.Synapse",
+    "Version": {
+      "Major": 3,
+      "Minor": 0,
+      "Build": 6,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Synapse\\3.0.6\\Az.Synapse.psd1"
   },
   {
     "Name": "Az.Synapse",
@@ -927,6 +1779,18 @@
     "Name": "Az.TrafficManager",
     "Version": {
       "Major": 1,
+      "Minor": 2,
+      "Build": 2,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.TrafficManager\\1.2.2\\Az.TrafficManager.psd1"
+  },
+  {
+    "Name": "Az.TrafficManager",
+    "Version": {
+      "Major": 1,
       "Minor": 1,
       "Build": 0,
       "Revision": -1,
@@ -934,6 +1798,18 @@
       "MinorRevision": -1
     },
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.TrafficManager\\1.1.0\\Az.TrafficManager.psd1"
+  },
+  {
+    "Name": "Az.Websites",
+    "Version": {
+      "Major": 3,
+      "Minor": 2,
+      "Build": 0,
+      "Revision": -1,
+      "MajorRevision": -1,
+      "MinorRevision": -1
+    },
+    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Websites\\3.2.0\\Az.Websites.psd1"
   },
   {
     "Name": "Az.Websites",
@@ -1048,10 +1924,10 @@
     "Version": {
       "Major": 1,
       "Minor": 0,
-      "Build": 1,
-      "Revision": -1,
-      "MajorRevision": -1,
-      "MinorRevision": -1
+      "Build": 4,
+      "Revision": 1,
+      "MajorRevision": 0,
+      "MinorRevision": 1
     },
     "Path": "C:\\program files\\powershell\\7\\Modules\\Microsoft.PowerShell.PSResourceGet\\Microsoft.PowerShell.PSResourceGet.psd1"
   },
@@ -1132,7 +2008,7 @@
     "Version": {
       "Major": 2,
       "Minor": 3,
-      "Build": 4,
+      "Build": 5,
       "Revision": -1,
       "MajorRevision": -1,
       "MinorRevision": -1
@@ -1248,7 +2124,7 @@
     "Path": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\BranchCache\\BranchCache.psd1"
   },
   {
-    "Name": "ConfigDefender",
+    "Name": "ConfigDefenderPerformance",
     "Version": {
       "Major": 1,
       "Minor": 0,
@@ -1257,7 +2133,7 @@
       "MajorRevision": -1,
       "MinorRevision": -1
     },
-    "Path": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\ConfigDefender\\ConfigDefender.psd1"
+    "Path": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\ConfigDefenderPerformance\\ConfigDefenderPerformance.psd1"
   },
   {
     "Name": "Defender",

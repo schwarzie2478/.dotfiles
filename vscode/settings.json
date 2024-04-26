@@ -3,17 +3,7 @@
     "editor.renderControlCharacters": false,
     "git.autofetch": true,
     "team.showWelcomeMessage": false,
-    "mssql.connections": [
-        {
-            "server": "localhost",
-            "database": "master",
-            "authenticationType": "SqlLogin",
-            "user": "sa",
-            "password": "",
-            "emptyPasswordInput": false,
-            "savePassword": true
-        }
-    ],
+    "mssql.connections": [],
     "git.enableSmartCommit": true,
     "emmet.extensionsPath": [
         ""
@@ -140,5 +130,8 @@
     "glassit.alpha": 245,
     "files.associations": {
         "*.tidal": "haskell"
-    },    
+    },
+    "mssql.objectExplorer.groupBySchema": true,
+    "powermode.combo.location": "statusbar",
+    
 }

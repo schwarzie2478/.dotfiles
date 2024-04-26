@@ -8,7 +8,6 @@ chocolatey-compatibility.extension 1.0.0
 chocolatey-core.extension 1.4.0
 chocolatey-windowsupdate.extension 1.0.5
 curl 7.28.1
-docker-cli 20.10.12
 ghc 9.6.2
 git 2.41.0
 git.install 2.41.0
@@ -36,4 +35,4 @@ TidalCycles 1.9.4
 unzip 6.0.0
 vcredist140 14.38.33135
 vcredist2015 14.0.24215.20170201
-37 packages installed.
+36 packages installed.

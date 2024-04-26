@@ -18,5 +18,27 @@
 				"${3:Answer}",
 			],
 			"description": "Make anki card"
-		}
+		},
+		"insert table of contents":{
+			"prefix": "toc",
+			"body": [
+				"## Table of Contents",
+				"[toc]",
+			],
+			"description": "Insert table of contents"
+		},
+		"link to other page":{
+			"prefix": "link",
+			"body": [
+				"[${TM_SELECTED_TEXT}](${TM_SELECTED_TEXT}.md)",
+			],
+			"description": "Link to other page"
+		},
+		"link from clipboard":{
+			"prefix": "linkclip",
+			"body": [
+				"[${TM_SELECTED_TEXT:link}](${CLIPBOARD})"
+			],
+			"description": "Link from clipboard"
+		},
 }
