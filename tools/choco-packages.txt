@@ -24,7 +24,6 @@ kubernetes-helm 3.7.2
 lazygit 0.40.2
 maven 3.5.3
 msys2 20230718.0.0
-neovim 0.9.5
 packer 1.8.5
 pulsar 1.103.0
 ripgrep 14.1.0
@@ -35,4 +34,4 @@ TidalCycles 1.9.4
 unzip 6.0.0
 vcredist140 14.38.33135
 vcredist2015 14.0.24215.20170201
-36 packages installed.
+35 packages installed.

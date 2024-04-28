@@ -26,3 +26,7 @@
 	diff-words = diff --color-words='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[safe]
+	directory = D:/sources/Learning/Learning2024/Certification/Azure-storage-blob-dotnet-getting-started
+	directory = D:/sources/Learning/Learning2024/Certification/Azure-todo-csharp-cosmos-sql
+	directory = D:/sources/Learning/Learning2024/Certification/vanilla-basic

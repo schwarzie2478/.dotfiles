@@ -19,6 +19,7 @@ Set-Alias google Search-Google
 
 Function OpenNeoVimConfigFile{ nvim $env:userprofile\AppData\local\nvim\init.lua}
 set-alias -Name nvim-config -Value OpenNeoVimConfigFile
+set-alias -Name vim -Value nvim
 
 Function OpenPowershellConfigFile{ code $Profile}
 set-alias -Name ps-config -Value OpenPowershellConfigFile
@@ -49,4 +50,5 @@ Function Copy-Config{
 & "d:\Sources\.dotfiles\backuptask.ps1"
 }
 set-alias -Name saveconfig -Value Copy-Config
+
 pop-location
