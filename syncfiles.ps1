@@ -19,6 +19,7 @@ function Backup {
     BackUpInstalledModulesToJson
     ListChocoPackages
     ListScoopPackages
+    ListDotnetTools
 }
 
 # function to pull from remote and return false if there are conflicts
@@ -130,3 +131,9 @@ function ListChocoPackages {
     )
     choco list > tools\choco-packages.txt
 }
+function ListDotnetTools {
+    param(
+    )
+    dotnet tool list -g > tools\dotnet-tools.txt
+}
+
