@@ -1,0 +1,6 @@
+Package Id         Version      Commands    
+--------------------------------------------
+clojure.main       1.11.0       Clojure.Main
+dotnet-appcat      0.1.102      appcat      
+dotnet-serve       1.2.0        dotnet-serve
+fake-cli           5.12.0       fake        
