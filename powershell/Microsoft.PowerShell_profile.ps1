@@ -1,5 +1,7 @@
 push-location .
 
+Set-ItemProperty 'registry::HKEY_CURRENT_USER\Control Panel\Accessibility\Blind Access' on 1
+
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme jandedobbeleer
 Import-module Terminal-icons
