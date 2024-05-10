@@ -133,5 +133,6 @@
     },
     "mssql.objectExplorer.groupBySchema": true,
     "powermode.combo.location": "statusbar",
+    "vim.useSystemClipboard": true,
     
 }
