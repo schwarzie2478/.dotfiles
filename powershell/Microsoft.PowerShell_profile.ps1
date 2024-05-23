@@ -1,4 +1,4 @@
-push-location .
+push-location C:\Users\Stijn\Documents\PowerShell
 
 Set-ItemProperty 'registry::HKEY_CURRENT_USER\Control Panel\Accessibility\Blind Access' on 1
 
@@ -10,6 +10,8 @@ Import-module PSReadline
 Write-Host "Loading Visual Studio 2022 Developer Command Prompt"
 
 & "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1"
+
+. C:\Users\Stijn\Documents\PowerShell\SoundConfiguration.ps1
 
 function Search-Google{
     $query = 'https://www.google.com/search?q='
@@ -26,20 +28,6 @@ set-alias -Name vim -Value nvim
 Function OpenPowershellConfigFile{ code $Profile}
 set-alias -Name ps-config -Value OpenPowershellConfigFile
 
-# set audio device to Speakers (Realtek High Definition Audio)
-Function Set-Speaker{
-    $device = get-audioDEvice -List | ? { $_.Name.Contains("Speakers (Realtek High Definition Audio)") }
-    Set-AudioDevice -Id $device.Id
-}
-Set-Alias -Name speakers -Value Set-Speaker
-
-# do the same for HyperX CloudXSpeakers (HyperX Cloud Flight Wireless)"
-
-Function Set-HyperCloud{
-    $device = get-audioDEvice -List | ? { $_.Name.Contains("Speakers (HyperX Cloud Flight Wireless)") }
-    Set-AudioDevice -Id $device.Id
-}
-Set-Alias -Name hyper -Value Set-HyperCloud
 
 # make alias for asking github copilot cli for a given suggestion
 Function Get-CopilotSuggestion{

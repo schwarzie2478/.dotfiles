@@ -11,7 +11,8 @@
     "instantmarkdown.autoOpenBrowser": false,
     "tabnine.experimentalAutoImports": true,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.mp3": "vscode.audioPreview"
     },
     "jupyter.alwaysTrustNotebooks": true,
     "sync.removeExtensions": false,

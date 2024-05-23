@@ -35,7 +35,3 @@ unzip 6.0.0
 vcredist140 14.38.33135
 vcredist2015 14.0.24215.20170201
 35 packages installed.
-
-Did you know Pro / Business automatically syncs with Programs and
- Features? Learn more about Package Synchronizer at
- https://chocolatey.org/compare
