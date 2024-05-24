@@ -3502,41 +3502,5 @@
       "MinorRevision": 0
     },
     "Path": "C:\\Program Files\\Intel\\IntelNetCmdlets\\IntelNetCmdlets.psd1"
-  },
-  {
-    "Name": "PowerShellEditorServices",
-    "Version": {
-      "Major": 3,
-      "Minor": 20,
-      "Build": 1,
-      "Revision": -1,
-      "MajorRevision": -1,
-      "MinorRevision": -1
-    },
-    "Path": "C:\\Users\\Stijn\\.vscode\\extensions\\ms-vscode.powershell-2024.2.2\\modules\\PowerShellEditorServices\\PowerShellEditorServices.psd1"
-  },
-  {
-    "Name": "PSReadLine",
-    "Version": {
-      "Major": 2,
-      "Minor": 4,
-      "Build": 0,
-      "Revision": -1,
-      "MajorRevision": -1,
-      "MinorRevision": -1
-    },
-    "Path": "C:\\Users\\Stijn\\.vscode\\extensions\\ms-vscode.powershell-2024.2.2\\modules\\PSReadLine\\2.4.0\\PSReadLine.psd1"
-  },
-  {
-    "Name": "PSScriptAnalyzer",
-    "Version": {
-      "Major": 1,
-      "Minor": 22,
-      "Build": 0,
-      "Revision": -1,
-      "MajorRevision": -1,
-      "MinorRevision": -1
-    },
-    "Path": "C:\\Users\\Stijn\\.vscode\\extensions\\ms-vscode.powershell-2024.2.2\\modules\\PSScriptAnalyzer\\1.22.0\\PSScriptAnalyzer.psd1"
   }
 ]

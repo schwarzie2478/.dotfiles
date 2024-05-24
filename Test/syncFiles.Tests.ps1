@@ -17,6 +17,10 @@ Describe "Testing Backup configuration files" {
             Copy-FilesToRepoRoot
             $fileExists = Test-Path -Path $PSScriptRoot\..\.gitmessage
             $fileExists | Should -Be $true
+            
+            $fileExists = Test-Path -Path $PSScriptRoot\..\windowsTerminal\settings.json
+            $fileExists | Should -Be $true
+            
         }
     }
 }

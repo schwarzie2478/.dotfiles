@@ -1,7 +1,7 @@
 #if Write-Info is  defined,don't load the helper functions again
-if  (Get-Command Write-Info -ErrorAction SilentlyContinue){
-    return
-}
+# if  (Get-Command Write-Info -ErrorAction SilentlyContinue){
+#     return
+# }
 
 $logPath = '$PSScriptRoot\log'
 
@@ -17,6 +17,7 @@ function Write-Info{
         $logEvent = $false
     )
 
+    write-host $logMessage
     # get date and time in a format that can be used in a file name
     $date = Get-Date -Format "yyyy-MM-dd"
     $logMessage | Out-File -Append -FilePath "$PSScriptRoot\log\${date}-log.txt"
