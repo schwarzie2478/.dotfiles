@@ -3,6 +3,11 @@ $configItems = @{
         "syncDir" = ".";
         "fileLocation" = ".gitignore"
     };
+    "WT_settings.json" = @{
+        "fileName" = "settings.json";
+        "syncDir" = "windowsTerminal";
+        "fileLocation" = "AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
+    };
     ".gitconfig" = @{
         "syncDir" = ".";
         "fileLocation" = ".gitconfig"

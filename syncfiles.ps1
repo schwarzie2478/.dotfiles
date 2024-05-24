@@ -6,7 +6,13 @@ function Copy-FilesToRepoRoot($copyData) {
     foreach ($fileName in $copyData.Keys) {
         $sourcePath = Join-Path -Path $env:USERPROFILE -ChildPath $copyData[$fileName]["fileLocation"]
         $destinationParent = $copyData[$fileName]["syncDir"]
-        $destinationPath = Join-Path -Path $destinationParent -ChildPath $fileName
+        # added check for fileName property to help with the duplicate key issue with settings.json
+        if( [bool]($myObject.PSobject.Properties.name -match "fileName") ) {
+            $destinationPath = Join-Path -Path -Destination $destinationParent -ChildPath $copyData[$fileName]["fileName"]
+        } else {
+            $destinationPath = Join-Path -Path -Destination $destinationParent -ChildPath $fileName
+        }
+        
         Copy-Item $sourcePath -Destination $destinationPath -Force
     }
 }
