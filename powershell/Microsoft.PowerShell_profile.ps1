@@ -3,9 +3,25 @@ push-location C:\Users\Stijn\Documents\PowerShell
 Set-ItemProperty 'registry::HKEY_CURRENT_USER\Control Panel\Accessibility\Blind Access' on 1
 
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme jandedobbeleer
+Set-PoshPrompt -Theme schwarzie2478
 Import-module Terminal-icons
+
 Import-module PSReadline
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Windows
+
+Import-module z
+
+function yy {
+    $tmp = [System.IO.Path]::GetTempFileName()
+    yazi $args --cwd-file="$tmp"
+    $cwd = Get-Content -Path $tmp
+    if (-not [String]::IsNullOrEmpty($cwd) -and $cwd -ne $PWD.Path) {
+        Set-Location -LiteralPath $cwd
+    }
+    Remove-Item -Path $tmp
+}
 
 Write-Host "Loading Visual Studio 2022 Developer Command Prompt"
 

@@ -14,12 +14,15 @@ Describe "Testing Backup configuration files" {
     Context "When the script is run" {
         # TODO: make test file different from existing files
         It "should create a file in the config folder" {
-            Copy-FilesToRepoRoot
+            write-info "Testing Backup configuration files"
+            Copy-FilesToRepoRoot $configItems
+            write-info "Files copied to repo root"
             $fileExists = Test-Path -Path $PSScriptRoot\..\.gitmessage
             $fileExists | Should -Be $true
-            
+
             $fileExists = Test-Path -Path $PSScriptRoot\..\windowsTerminal\settings.json
             $fileExists | Should -Be $true
+            write-info "settings.json file exists"
             
         }
     }

@@ -137,5 +137,6 @@
     "vim.useSystemClipboard": true,
     "python.condaPath": "d:\\Users\\Stijn\\anaconda3\\condabin\\",
     "python.venvPath": "D:\\Users\\Stijn\\anaconda3\\envs",
+    "github.copilot.editor.enableAutoCompletions": true,
     
 }

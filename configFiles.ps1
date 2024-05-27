@@ -8,6 +8,14 @@ $configItems = @{
         "syncDir" = "windowsTerminal";
         "fileLocation" = "AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
     };
+    "crt.hlsl" = @{
+        "syncDir" = "windowsTerminal";
+        "fileLocation" = "AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\crt.hlsl"
+    };
+    "ultra-detailed-nebula-abstract-wallpaper-4.jpg" = @{
+        "syncDir" = "windowsTerminal";
+        "fileLocation" = "AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\ultra-detailed-nebula-abstract-wallpaper-4.jpg"
+    };
     ".gitconfig" = @{
         "syncDir" = ".";
         "fileLocation" = ".gitconfig"
