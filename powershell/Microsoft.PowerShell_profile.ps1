@@ -11,8 +11,12 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
 
-Import-module z
+# zoxide installed with scoop
+# configure zoxide to have z as alias
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
+# From yazi manual
+# Provides the ability to change the current working directory when exiting Yazi.
 function yy {
     $tmp = [System.IO.Path]::GetTempFileName()
     yazi $args --cwd-file="$tmp"

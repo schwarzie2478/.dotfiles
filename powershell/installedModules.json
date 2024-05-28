@@ -2544,18 +2544,6 @@
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Terminal-Icons\\0.7.1\\Terminal-Icons.psd1"
   },
   {
-    "Name": "z",
-    "Version": {
-      "Major": 1,
-      "Minor": 1,
-      "Build": 13,
-      "Revision": -1,
-      "MajorRevision": -1,
-      "MinorRevision": -1
-    },
-    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\z\\1.1.13\\z.psd1"
-  },
-  {
     "Name": "CimCmdlets",
     "Version": {
       "Major": 7,
