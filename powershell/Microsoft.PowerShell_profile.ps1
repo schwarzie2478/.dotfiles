@@ -2,8 +2,9 @@ push-location C:\Users\Stijn\Documents\PowerShell
 
 Set-ItemProperty 'registry::HKEY_CURRENT_USER\Control Panel\Accessibility\Blind Access' on 1
 
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme schwarzie2478
+# if theme is not found, create symlink to powershell folder
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\schwarzie2478.omp.json" --print) -join "`n"))
+
 Import-module Terminal-icons
 
 Import-module PSReadline
@@ -14,6 +15,24 @@ Set-PSReadLineOption -EditMode Windows
 # zoxide installed with scoop
 # configure zoxide to have z as alias
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
+
+# To pass unicode characters to the terminal, we need to set the codepage to UTF-8
+[Console]::OutputEncoding = [Text.UTF8Encoding]::new()
+
+function Search-FuzyyAndOpen{
+    fzf | %{ invoke-expression -Command ("& '.\$_'")}
+}
+set-alias eze Search-FuzyyAndOpen
+
+function Search-FuzzyAndCode{
+    fzf | %{ invoke-expression -Command ("code '.\$_'")}
+}
+set-alias czc Search-FuzzyAndCode
+
+function Search-FuzzyAndPlay{
+    fzf | %{ invoke-expression -Command ("vlc --playlist-enqueue "".\$_""")}
+}
+set-alias vzv Search-FuzzyAndPlay
 
 # From yazi manual
 # Provides the ability to change the current working directory when exiting Yazi.

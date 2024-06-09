@@ -14,6 +14,7 @@ azuredatastudio               1.48.0       extras      2024-04-29 17:13:29
 bfg                           1.14.0       main        2024-05-11 12:02:06 
 bicep                         0.27.1       main        2024-05-18 23:04:49 
 brave                         1.66.110     extras      2024-05-20 19:48:21 
+bruno                         1.18.1       extras      2024-06-05 21:59:47 
 calibre                       7.11.0       extras      2024-05-26 10:22:15 
 Cascadia-Code                 2404.23      nerd-fonts  2024-05-27 23:36:40 
 chafa                         1.14.0       main        2024-05-29 02:39:23 
@@ -46,7 +47,8 @@ msbuild-structured-log-viewer 2.2.243      extras      2024-05-18 23:12:12
 nano                          7.2-22.1     main        2024-04-27 11:24:57 
 neovim                        0.10.0       main        2024-05-18 23:17:01 
 nilesoft-shell                1.9.15       extras      2024-04-29 20:40:49 
-obsidian                      1.5.12       extras      2024-04-29 10:46:01 
+obsidian                      1.6.2        extras      2024-06-08 16:05:12 
+oh-my-posh                    21.3.0       main        2024-06-08 10:03:56 
 openlens                      6.5.2        extras      2024-04-28 19:14:58 
 pandoc                        3.2          main        2024-05-19 00:15:29 
 picard                        2.11         extras      2024-05-29 09:55:03 

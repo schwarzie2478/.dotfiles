@@ -2496,18 +2496,6 @@
     "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\Az.Websites\\2.12.1\\Az.Websites.psd1"
   },
   {
-    "Name": "oh-my-posh",
-    "Version": {
-      "Major": 6,
-      "Minor": 11,
-      "Build": 2,
-      "Revision": -1,
-      "MajorRevision": -1,
-      "MinorRevision": -1
-    },
-    "Path": "C:\\Users\\Stijn\\Documents\\PowerShell\\Modules\\oh-my-posh\\6.11.2\\oh-my-posh.psd1"
-  },
-  {
     "Name": "Pester",
     "Version": {
       "Major": 5,

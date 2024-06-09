@@ -52,4 +52,8 @@ $configItems = @{
         "syncDir" = "powershell";
         "fileLocation" = "Documents\PowerShell\Microsoft.VSCode_profile.ps1"
     };
+    "schwarzie2478.omp.json" = @{
+        "syncDir" = "powershell";
+        "fileLocation" = "Documents\PowerShell\schwarzie2478.omp.json"
+    };
 }
