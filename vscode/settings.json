@@ -128,7 +128,7 @@
         ".ionide"
     ],
     "task.verboseLogging": true,
-    "glassit.alpha": 245,
+    "glassit.alpha": 255,
     "files.associations": {
         "*.tidal": "haskell"
     },
@@ -138,5 +138,6 @@
     "python.condaPath": "d:\\Users\\Stijn\\anaconda3\\condabin\\",
     "python.venvPath": "D:\\Users\\Stijn\\anaconda3\\envs",
     "github.copilot.editor.enableAutoCompletions": true,
+    "accessibility.dimUnfocused.opacity": 1,
     
 }

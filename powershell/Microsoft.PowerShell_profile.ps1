@@ -1,9 +1,23 @@
 push-location C:\Users\Stijn\Documents\PowerShell
 
 Set-ItemProperty 'registry::HKEY_CURRENT_USER\Control Panel\Accessibility\Blind Access' on 1
+function Invoke-Starship-TransientFunction {
+    &starship module character
+}
+#
+if ( [Environment]::GetEnvironmentVariable('STARSHIP_CONFIG'))
+{
 
-# if theme is not found, create symlink to powershell folder
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\schwarzie2478.omp.json" --print) -join "`n"))
+
+    #configure starship with the config file
+    Invoke-Expression (&starship init powershell)
+    #enable transient prompt
+    Enable-TransientPrompt
+} else
+{
+    # if theme is not found, create symlink to powershell folder
+    & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\schwarzie2478.omp.json" --print) -join "`n"))
+}
 
 Import-module Terminal-icons
 

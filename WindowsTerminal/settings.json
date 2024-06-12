@@ -51,11 +51,15 @@
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font"
-            }
+            },
+            "opacity": 40,
+            "useAcrylic": false
+            
         },
         "list": 
         [
             {
+                "backgroundImage":  "",
                 "elevate": false,
                 "font": 
                 {
@@ -149,6 +153,24 @@
                 "hidden": false,
                 "name": "Anaconda Prompt",
                 "startingDirectory": "%HOMEPATH%"
+            },
+            {
+                "colorScheme": "Campbell",
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+                "elevate": false,
+                "environment": 
+                {
+                    "STARSHIP_CONFIG": "C:\\Users\\Stijn\\AppData\\Local\\Starship\\config.toml"
+                },
+                "font": 
+                {
+                    "face": "CaskaydiaCove NF"
+                },
+                "guid": "{18f8adf4-2d3d-49f4-b5ae-197d62796808}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "PowerShell Starship",
+                "startingDirectory": "D:\\sources\\Learning\\Learning2024"
             }
         ]
     },
@@ -410,5 +432,5 @@
     ],
     "startOnUserLogin": true,
     "themes": [],
-    "useAcrylicInTabRow": true
+    "useAcrylicInTabRow": false
 }
