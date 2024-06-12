@@ -3,7 +3,7 @@
 #     return
 # }
 
-$logPath = '$PSScriptRoot\log'
+$logPath = "$PSScriptRoot\log"
 
 if (!(Test-Path -Path $logPath)) {
     New-Item -ItemType Directory -Path $logPath | Out-Null
