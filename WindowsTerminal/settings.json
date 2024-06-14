@@ -52,14 +52,12 @@
             {
                 "face": "CaskaydiaCove Nerd Font"
             },
-            "opacity": 40,
             "useAcrylic": false
             
         },
         "list": 
         [
             {
-                "backgroundImage":  "",
                 "elevate": false,
                 "font": 
                 {

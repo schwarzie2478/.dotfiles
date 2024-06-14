@@ -25,6 +25,8 @@ Import-module PSReadline
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 Set-PSReadLineOption -EditMode Windows
+Set-PSReadLineOption -ExtraPromptLineCount 2
+
 
 # zoxide installed with scoop
 # configure zoxide to have z as alias
@@ -34,17 +36,17 @@ Invoke-Expression (& { (zoxide init powershell | Out-String) })
 [Console]::OutputEncoding = [Text.UTF8Encoding]::new()
 
 function Search-FuzyyAndOpen{
-    fzf | %{ invoke-expression -Command ("& '.\$_'")}
+    fzf | %{ $path = $_.Replace("'", "''"); invoke-expression -Command ("& '.\$path'")}
 }
 set-alias eze Search-FuzyyAndOpen
 
 function Search-FuzzyAndCode{
-    fzf | %{ invoke-expression -Command ("code '.\$_'")}
+    fzf | %{ $path = $_.Replace("'", "''"); invoke-expression -Command ("code '.\$path'")}
 }
 set-alias czc Search-FuzzyAndCode
 
 function Search-FuzzyAndPlay{
-    fzf | %{ invoke-expression -Command ("vlc --playlist-enqueue "".\$_""")}
+    fzf | %{ $path = $_.Replace("'", "''"); invoke-expression -Command ("vlc --playlist-enqueue '.\$path'")}
 }
 set-alias vzv Search-FuzzyAndPlay
 
@@ -58,6 +60,13 @@ function yy {
         Set-Location -LiteralPath $cwd
     }
     Remove-Item -Path $tmp
+}
+function mp3 {
+    # The name of the youtube url file to convert to mp3
+    [Parameter(Mandatory = $true, HelpMessage = "The name of the youtube url file to convert to mp3")]
+    [string]$url = $args[0]
+
+    yt-dlp -x --audio-format mp3 $url
 }
 
 Write-Host "Loading Visual Studio 2022 Developer Command Prompt"
@@ -78,10 +87,6 @@ Function OpenNeoVimConfigFile{ nvim $env:userprofile\AppData\local\nvim\init.lua
 set-alias -Name nvim-config -Value OpenNeoVimConfigFile
 set-alias -Name vim -Value nvim
 
-Function OpenPowershellConfigFile{ code $Profile}
-set-alias -Name ps-config -Value OpenPowershellConfigFile
-
-
 # make alias for asking github copilot cli for a given suggestion
 Function Get-CopilotSuggestion{
     gh copilot suggest -t shell $args
@@ -92,6 +97,8 @@ Set-Alias -Name ask -Value Get-CopilotSuggestion
 Function Copy-Config{
 & "d:\Sources\.dotfiles\backuptask.ps1"
 }
-set-alias -Name saveconfig -Value Copy-Config
+
+ascii-image-converter .\terminal.png -C --map " schwarzie2478"
+# ascii-image-converter .\terminal.png -C --map " stijn peeters" 
 
 pop-location

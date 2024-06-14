@@ -56,4 +56,8 @@ $configItems = @{
         "syncDir" = "powershell";
         "fileLocation" = "Documents\PowerShell\schwarzie2478.omp.json"
     };
+    "terminal.png" = @{
+        "syncDir" = "powershell";
+        "fileLocation" = "Documents\PowerShell\terminal.png"
+    };
 }
